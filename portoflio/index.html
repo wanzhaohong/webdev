@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,27 +12,173 @@
     <!-- bootstrap css file -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 
-</head>
-<body>
-    
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Bill Wan</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- box icons css file -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+</head>
+
+<body>
+    <!---------------header------------------->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div>
+                <a href="#" class="nav_logo">Bill Wan</a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <div class="nav_close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active">Home</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#projects" class="nav_link">Projects</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">About</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!-------------- HOME PAGE ----------------->
+        <section class="home" id="home">
+            <div class="home_container bd-grid">
+                <div class="home_data">
+                    <div class="home_img">
+                        <img src="./IMG/mypic.png" alt="mypic">
+                    </div>
+
+                    <h1 class="home_title">Bill Wan</h1>
+                    <span class="home_profession">Web & Android Developer</span>
+
+                    <div class="home_social">
+                        <a href="#" class="home_social-link"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="home_social-link"><i class='bx bxl-github'></i></a>
+                    </div>
+
+                    <a download="" href="#" class="button home_button">Downlaod Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-------------- ABOUT PAGE ----------------->
+        <section class="about section" id="about">
+            <div class="about_page">
+                <span class="section-subtitle">My intro</span>
+                <h2 class="section-title">About Me</h2>
+
+                <div>
+                    <div class="about_container bd-grid">
+
+                        <div class="about_information col-lg-4 col-md-4 col-sm-4">
+                        
+                            <!-- NAME -->
+                            <div class="about_information-data">
+                                <i class='bx bxs-user about_information-icon'></i>
+                                <span class="text">Bill Wan</span>
+                            </div>
+                            <!-- PHONE NUMBER -->
+                            <div class="about_information-data">
+                                <i class='bx bxs-phone about_information-icon'></i>
+                                <span class="text">(1)343-777-8390</span>
+                            </div>
+                            <!-- EMAIL -->
+                            <div class="about_information-data">
+                                <i class='bx bxs-envelope about_information-icon'></i>
+                                <span class="text">zhaohong1997111@gmail.com</span>
+                            </div>
+                        
+                        </div>
+
+
+                        <div class="about_data col-lg-8 col-md-8 col-sm-8">
+                            <p class="about_description">Hi, I am a <strong>Web & Android Developer</strong> who loved collaborating with others to create
+                                solution that solve real-world and
+                                everyday problems.</p>
+                            <p class="about_description_2">Currently looking for more opportunities! 💼</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <span class="section-subtitle">Qualification</span>
+                <h2 class="section-title">My Education</h2>
+
+                <div class="education_container bd-grid">
+                    <div class="education_content">
+                        <!-- The first -->
+                        <div>
+                            <h3 class="education_year">2013 - 2016</h3>
+                            <span class="education_school">Bell HS</span>
+                        </div>
+
+                        <div class="education_time">
+                            <span class="education_rounder"></span>
+                            <span class="education_line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="education_race">High School Diploma</h3>
+                            <span class="education_specialty">High School</span>
+                        </div>
+
+                        <!-- The Second -->
+                        <div>
+                            <h3 class="education_year">2016 - 2020</h3>
+                            <span class="education_school">Carleton University</span>
+                        </div>
+
+                        <div class="education_time">
+                            <span class="education_rounder"></span>
+                            <span class="education_line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="education_race">B.C.S.Honours</h3>
+                            <span class="education_specialty">Computer and Internet Security</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PROJECT PAGE -->
+        <section class="project section" id="project">
+            <div class="project_container bd-grid">
+                <div class="project_data">
+                    <h2 class="section-title project_title">Do you have a project in mind</h2>
+                    <p class="project_description">If you have a project that you want to carry out, do not hesitate and tell me what it is, and what services I can offer you. Contact me directly here.</p>
+                    <a href="#contact" class="button button_light">Contact Me</a>
+                </div>
+
+                <img src="./IMG/question.jpg" alt="" class="project_img">
+
+            </div>
+
+        </section>
+
+
+    </main>
+
 
 
     <!-- JQuery file -->
@@ -39,7 +186,10 @@
 
     <!-- Bootstrap js file -->
     <script src="./js/bootstrap.min.js"></script>
-    
+
+    <!-- Main js file -->
+    <script src="./js/main.js"></script>
+        
 
 </body>
 </html>
